@@ -1,0 +1,64 @@
+.campo-digitacao{
+    font-size: 20px;
+    height: 150px;
+    border: 3px solid black;    
+}
+.frase{
+    font-size: 20px;
+    text-align: left;
+}
+.campo-desativado{
+    background-color: lightgray;
+}
+.icones{
+    vertical-align: middle;
+}
+#botao_reiniciar{
+    background-color: red;
+}
+
+.borda-vermelha{
+    border: 3px solid red;
+}
+
+.borda-verde{
+    border: 3px solid green;
+}
+
+.placar{
+    display: none;
+}
+
+body{
+    overflow: scroll;
+}
+
+#erro{
+    color: red;
+    display: none;
+}
+
+#spinner{
+    display: none;
+}
+
+#frase-id{
+    width: 40px;
+}
+
+#botao-sync{
+    float: right;
+}
+
+.select-usuarios{
+    display: inline-block;
+}
+
+#usuarios{
+    display: block;
+}
+
+.selectize-input{
+    width: 150px;
+    vertical-align: middle;
+}
