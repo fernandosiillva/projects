@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "7ac17f7d-ba09-4546-8ef6-78cb1905cd4f",
+		"name": "microservicos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LOJA - compra",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"itens\":[\n\t\t{\n\t\t\t\"id\": 1,\n\t\t\t\"quantidade\": 5\n\t\t},\n\t\t{\n\t\t\t\"id\": 2,\n\t\t\t\"quantidade\": 1\n\t\t}\n\t],\n\t\"endereco\": {\n\t\t\"rua\": \"Rua da Maria\",\n\t\t\"numero\": 123,\n\t\t\"estado\": \"GO\"\n\t}\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/compra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"compra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FORNECEDOR - info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/info/GO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"info",
+						"GO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EUREKA - apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8761/eureka/apps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8761",
+					"path": [
+						"eureka",
+						"apps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONFIG-SERVER - fornecedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/fornecedor/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"fornecedor",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRODUTO - estado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/produto/df",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"produto",
+						"df"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PEDIDO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 1,\r\n        \"quantidade\": 5\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"quantidade\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/pedido",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"pedido"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
