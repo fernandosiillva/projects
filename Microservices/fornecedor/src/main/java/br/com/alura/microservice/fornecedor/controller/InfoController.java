@@ -21,7 +21,7 @@ public class InfoController {
 	
 	@RequestMapping("/{estado}")
 	public InfoFornecedor getInfoPorEstado(@PathVariable String estado) {
-		LOG.info("recebido pedido de informações do fornecedor de {}", estado);
+		LOG.info("recebido pedido de informacoes do fornecedor de {}", estado);
 		return infoService.getInfoPorEstado(estado);
 	}
 }
