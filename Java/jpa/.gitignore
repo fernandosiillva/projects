@@ -1,0 +1,5 @@
+*.class
+*.MF
+.classpath
+.project
+.settings
